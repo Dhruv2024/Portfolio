@@ -1,0 +1,161 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Sedgwick+Ave+Display&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+}
+
+#main{
+    display: flex;
+    /* overflow: scroll; */
+    animation-name: colorChange;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    /* height: 32rem; */
+    height:37rem;
+    width: 100%;
+    color: white;
+}
+@keyframes colorChange {
+    0% {
+        background: black; 
+    }
+    50% {
+        background-color: #1956e3;
+    }
+    100% {
+        background: black; 
+    }
+}
+#photo{
+    margin-left: auto;
+    height: 70%;
+}
+
+.text strong{
+    /* background-color: aqua; */
+    font-family: 'Lobster', cursive;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 13rem;
+    margin-left: 30%;
+    animation-name: fade-in;
+    /* overflow-y: scroll; */
+}
+/* .text::-webkit-scrollbar {
+    display: none;
+} */
+#nav_but:hover{
+    color: yellow;
+    cursor:pointer;
+}
+
+.linkedin{
+    height: 30px;
+    display: flex;
+    justify-content:right;
+    /* float: right; */
+    margin-left: 45rem;
+
+}
+.nav-item .linkedin img{
+    display: flex;
+    justify-content: flex-end;
+}
+.linkedin:hover{
+    transform: scale(1.5);
+}
+
+#about,#project,#education,#skill{
+    height: 37rem;
+    
+    /* background-color: red; */
+}
+
+
+@media screen and (max-width: 992px){
+    .linkedin{
+        display: block;
+        margin-left: 2px;
+    }
+}
+
+
+@media screen and (max-width: 1069px) and (min-width:993px){
+    .linkedin{
+        margin-left:45rem;
+    }
+}
+.type{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 17rem;
+}
+.typewrite{
+    color: yellow;
+}
+
+
+/* for about section */
+#about{
+    color: white;
+    animation-name:colorChange;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+
+.text{
+    font-family: 'Lobster', cursive;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 5rem;
+    text-align: center;
+    text-decoration: underline;
+}
+.name{
+    width: 65%;
+}
+
+#project{
+    color: white;
+    animation-name:colorChange;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+.project_ol{
+    text-decoration: none;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+.education_ol{
+    text-decoration: none;
+    font-size: 2rem;
+    margin-left: 1.5rem;
+}
+#todo{
+    height: 25%;
+    width: 30%;
+    color: white;
+}
+a:active{
+    color: white;
+}
+a:visited{
+    color: yellow;
+}
+#education{
+    color: white;
+    animation-name:colorChange;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+
+#skill{
+    color: white;
+    animation-name:colorChange;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
